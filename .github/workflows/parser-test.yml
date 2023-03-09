@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 16.x
       - name: Install dependencies
-        run: npm install
+        run: cd packages/parser && npm install
       - name: Run tests
-        run: npm run test
+        run: cd packages/parser && npm run test
