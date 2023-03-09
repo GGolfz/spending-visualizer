@@ -15,9 +15,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - name: Change Directory to packages/parser
-        run: cd packages/parser
       - name: Install dependencies
-        run: npm install
+        run: cd packages/parser && npm install
       - name: Run tests
-        run: npm run test
+        run: cd packages/parser && npm run test
